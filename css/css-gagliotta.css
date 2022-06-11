@@ -4,7 +4,7 @@ body{
 	font-family: 'Open Sans', 'montserrat', sans-serif;
 	letter-spacing: 0;
 	font-weight: 400;
-	font-size: 1.4rem;
+	font-size: 1.8rem;
 	line-height: 1.8;
 	color: #666;
 }
@@ -66,6 +66,12 @@ h5{
 h6{
 	font-size: 1.2rem;
 }
+
+.title {
+	font-size: 4.5rem;
+	font-weight: 400;
+}
+
 
 .footer .widget-title,
 .footer .widget-title a{
@@ -148,6 +154,11 @@ blockquote.large{
 }
 
 /* Title Classes */
+.subtitlebold
+{
+	font-weight: 400;
+}
+
 .title-xlarge{
 	font-size: 8rem;
 	line-height: 1;
@@ -1472,6 +1483,11 @@ body,
 [10. Slider & Parallax]
 */
 
+.buttongagliotta {
+	font-size: larger;
+	font
+}
+
 .tm-slider-container:not([class*="bkg-"]){
 	background: none;
 }
@@ -1826,6 +1842,7 @@ body,
 .overlay-info .project-title{
 	color: white;
 	margin-bottom: 0.8rem;
+	font-size: large;
 	display: block;
 }
 .overlay-fade-img-scale-out .overlay-info .overlay-info{
@@ -1999,6 +2016,7 @@ h4.project-title{
 }
 .project-title .label{
 	font-size: 2.5 rem;
+	font-weight: 500;
 	text-transform: uppercase;
 	font-weight: 500;
 }
