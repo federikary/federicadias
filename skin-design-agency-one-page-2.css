@@ -1,10 +1,53 @@
+/*------------------------------------------------------------------
+Sartre Skin Architecture
+Version: 1.0.3;
+Author: ThemeMountain
+Copyright: ThemeMountain
 
+[Table of contents]
+
+1. Typography
+2. Background Color & Color Classes
+3. Section Padding
+4. Header Styling
+5. Header Logo
+6. Header Navigation
+7. Header Buttons, Dropdowns & Icons
+8. Auxiliary Navigation
+9. Title Areas
+10. Slider & Parallax
+11. Lightbox
+12. Plugin Preloader
+13. Rollovers
+14. Homepage
+15. About Pages
+16. Contact Pages
+17. Project Pages
+18. Pagination
+19. Fullscreen Pages
+20. Blog Pages
+21. Form Elements
+22. Social Lists
+23. Footer
+24. Sidebar
+25. Dividers
+26. Media Element Player
+27. E-Commerce
+28. Component Styling
+29. Resolution Media Queries
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[1. Typography]
+*/
 
 body{
-	font-family: 'Open Sans', 'montserrat', sans-serif;
+	/*font-family: 'Open Sans', 'Helvetica Neue', sans-serif;*/
+	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 	letter-spacing: 0;
 	font-weight: 400;
-	font-size: 1.8rem;
+	font-size: 1.4rem;
 	line-height: 1.8;
 	color: #666;
 }
@@ -25,10 +68,12 @@ textarea,
 .side-navigation > ul > li > a,
 .overlay-navigation > ul > li > a,
 .grid-filter-menu a{
+	/*font-family: 'Raleway', 'Helvetica Neue', sans-serif;*/
 
-	font-family: 'Montserrat', 'Times', serif;
+	font-family: 'Playfair Display', 'Times', serif;
 }
 
+/* Titles */
 h1,
 h2,
 h3,
@@ -67,12 +112,7 @@ h6{
 	font-size: 1.2rem;
 }
 
-.title {
-	font-size: 4.5rem;
-	font-weight: 400;
-}
-
-
+/* Widget Titles */
 .footer .widget-title,
 .footer .widget-title a{
 	font-size: 1.4rem;
@@ -140,7 +180,7 @@ a.animated-link:hover .text-line,
 .accordion li a:hover .text-line,
 .tabs li a:hover .text-line,
 .blog-masonry .with-background .post-read-more a:hover .text-line{
-	background-color: #f2a649;
+	background-color: #ff6665;
 }
 a.animated-link{
 	position: relative;
@@ -154,11 +194,6 @@ blockquote.large{
 }
 
 /* Title Classes */
-.subtitlebold
-{
-	font-weight: 400;
-}
-
 .title-xlarge{
 	font-size: 8rem;
 	line-height: 1;
@@ -277,7 +312,7 @@ blockquote.large{
 	.fullscreen-section .background-on-mobile h4,
 	.fullscreen-section .background-on-mobile h5,
 	.fullscreen-section .background-on-mobile h6{
-		color: #004d8c !important;
+		color: #000 !important;
 	}
 }
 
@@ -293,7 +328,7 @@ body,
 	background-color: #fff;
 }
 .section-block.featured-media{
-	background-color: #004d8c;
+	background-color: #000;
 }
 
 /* greyscale */
@@ -323,52 +358,52 @@ body,
 
 /* grey */
 .bkg-grey{
-	background-color: #004d8c;
-	border-color: #004d8c;
+	background-color: #4e4e4d;
+	border-color: #4e4e4d;
 }
 .bkg-hover-grey:hover{
-	background-color: #004d8c;
-	border-color: #004d8c;
+	background-color: #4e4e4d;
+	border-color: #4e4e4d;
 }
 .border-hover-grey:hover{
-	border-color: #004d8c;
+	border-color: #4e4e4d;
 }
 .color-grey,
 .color-hover-grey:hover{
-	color: #004d8c;
+	color: #4e4e4d;
 }
 
 /* charcoal */
 .bkg-charcoal-light{
-	background-color: #f2a649;
-	border-color: #004d8c;
+	background-color: #333;
+	border-color: #333;
 }
 .bkg-hover-charcoal-light:hover{
-	background-color: #004d8c;
-	border-color: #004d8c;
+	background-color: #333;
+	border-color: #333;
 }
 .border-hover-charcoal-light:hover{
-	border-color: #004d8c;
+	border-color: #333;
 }
 .color-charcoal-light,
 .color-hover-charcoal-light:hover{
-	color: #004d8c;
+	color: #333;
 }
 .bkg-charcoal{
-	background-color: #004d8c;
-	border-color: #004d8c;
+	background-color: #151515;
+	border-color: #151515;
 }
 .bkg-hover-charcoal:hover{
-	background-color: #004d8c;
-	border-color: #004d8c;
+	background-color: #151515;
+	border-color: #151515;
 }
 .border-charcoal,
 .border-hover-charcoal:hover{
-	border-color: #004d8c5;
+	border-color: #151515;
 }
 .color-charcoal,
 .color-hover-charcoal:hover{
-	color: #004d8c;
+	color: #151515;
 }
 
 /* blue */
@@ -494,7 +529,7 @@ body,
 }
 .tm-slider-container .text-line-vertical:after{
 	height: 50rem;
-	border-color: #f2a649;
+	border-color: #ff6666;
 }
 @media only screen and (min-width: 960px){
 	.header-1-static + .content{
@@ -1483,11 +1518,6 @@ body,
 [10. Slider & Parallax]
 */
 
-.buttongagliotta {
-	font-size: larger;
-	font
-}
-
 .tm-slider-container:not([class*="bkg-"]){
 	background: none;
 }
@@ -1639,8 +1669,6 @@ body,
 		display: none !important;
 	}
 }
-
-
 
 /*------------------------------------------------------------------
 [11. Lightbox]
@@ -1826,10 +1854,10 @@ body,
 	color: #fff;
 }
 .overlay-info .project-description{
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 	opacity: 0.7;
 	text-transform: none;
-	font-weight: 500;
+	font-weight: 300;
 	font-style: italic;
 }
 
@@ -1844,7 +1872,6 @@ body,
 .overlay-info .project-title{
 	color: white;
 	margin-bottom: 0.8rem;
-	font-size: large;
 	display: block;
 }
 .overlay-fade-img-scale-out .overlay-info .overlay-info{
@@ -1875,10 +1902,6 @@ body,
 	line-height: 5rem;
 }
 .scroll-to-top.icon-circled{
-	line-height: 4.8rem;
-}
-
-.icon-menu{
 	line-height: 4.8rem;
 }
 
@@ -2018,13 +2041,11 @@ body,
 	background-color: rgba(255,255,255,.6);
 }
 h4.project-title{
-	font-size: 2.5 rem;
+	font-size: 1.4rem;
 }
 .project-title .label{
-	font-size: 2.5 rem;
-	font-weight: 500;
+	font-size: 1rem;
 	text-transform: uppercase;
-	font-weight: 500;
 }
 .project-description{
 	font-size: 1.2rem;
@@ -2828,8 +2849,8 @@ textarea.required-field{
 /* Footer Background */
 .footer{
 	width: 100%;
-	background: #044d8c;
-	color: rgb(237, 237, 237);
+	background: #232323;
+	color: #666;
 	z-index: 1;
 }
 .footer [class*="content-grid"]{
@@ -2876,7 +2897,7 @@ textarea.required-field{
 .footer .social-list a{
 	font-size: 1.1rem;
 	font-weight: normal;
-	color: #ffffff;
+	color: #666666;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
 }
@@ -3702,7 +3723,7 @@ only screen and (				min-resolution: 2dppx) {
 
 	/* Hero Sections */
 	.hero-5-1 .media-column{
-		background-image: url(../images/gagliotta/materiali/varchetella.jpg);
+		background-image: url(../images/renard/hero/harry-sandhu-209807@2x.jpg);
 	}
 
 	/* Call to Action Sections */
@@ -3710,134 +3731,4 @@ only screen and (				min-resolution: 2dppx) {
 		background-image: url(../images/architecture/generic/call-to-action-1.jpg);
 	}
 
-}
-
-.portfolio-experiment {
-  background: #2d2d2d;
-  
-  a {
-    color: white;
-    padding: $pad $extra;
-    display: inline-block;
-    border: $thick solid transparent;
-    position: relative;
-    font-size: 1.5em;
-    cursor: pointer;
-    letter-spacing: 0.07em;
-
-    .text {
-      // padding: 0 0.3em;
-      font-family: proxima-nova, monospace;
-      transform: translate3d(0,$pad,0);
-      display: block;
-      transition: transform 0.4s cubic-bezier(.2,0,0,1) 0.4s;
-    }
-
-    &:after {
-      position: absolute;
-      content: '';
-      bottom: -$thick;
-      left: $extra;
-      right: $extra;
-      height: $thick;
-      background: $color;
-      // z-index: -1;
-      transition: 
-        transform 0.8s cubic-bezier(1,0,.37,1) 0.2s,
-        right 0.2s cubic-bezier(.04,.48,0,1) 0.6s,
-        left 0.4s cubic-bezier(.04,.48,0,1) 0.6s;
-      transform-origin: left;
-    }
-
-  }
-
-  .line {
-    position: absolute;
-    background: $color;
-
-    &.-right,
-    &.-left {
-      width: $thick;
-      bottom: -$thick;
-      top: -$thick;
-      transform: scale3d(1,0,1);
-    }  
-
-    &.-top,
-    &.-bottom {
-      height: $thick;
-      left: -$thick;
-      right: -$thick;
-      transform: scale3d(0,1,1);
-    }
-
-    &.-right {
-      right: -$thick;
-      transition: transform 0.1s cubic-bezier(1,0,.65,1.01) 0.23s;
-      transform-origin: top;
-    }
-
-    &.-top {
-      top: -$thick;
-      transition: transform 0.08s linear 0.43s;
-      transform-origin: left;
-    }
-
-    &.-left {
-      left: -$thick;
-      transition: transform 0.08s linear 0.51s;
-      transform-origin: bottom;
-    }
-
-    &.-bottom {
-      bottom: -$thick;
-      transition: transform 0.3s cubic-bezier(1,0,.65,1.01);
-      transform-origin: right;
-    }  
-  }
-
-  a:hover,
-  a:active {
-
-    .text {
-      transform: translate3d(0,0,0);
-      transition: transform 0.6s cubic-bezier(.2,0,0,1) 0.4s;
-    }
-
-    &:after {
-      transform: scale3d(0,1,1);
-      right: -$thick;
-      left: -$thick;
-      transform-origin: right;
-      transition: 
-        transform 0.2s cubic-bezier(1,0,.65,1.01) 0.17s,
-        right 0.2s cubic-bezier(1,0,.65,1.01),
-        left 0s 0.3s;
-    }
-
-    .line {
-      transform: scale3d(1,1,1);
-
-      &.-right {
-        transition: transform 0.1s cubic-bezier(1,0,.65,1.01) 0.2s;
-        transform-origin: bottom;
-      }
-
-      &.-top {
-        transition: transform 0.08s linear 0.4s;
-        transform-origin: right;
-      }
-
-      &.-left {
-        transition: transform 0.08s linear 0.48s;
-        transform-origin: top;
-      }
-
-      &.-bottom {
-        transition: transform 0.5s cubic-bezier(0,.53,.29,1) 0.56s;
-        transform-origin: left;
-      }
-    }
-
-  }
 }
